@@ -1,0 +1,1 @@
+module.exports = ['motor', 'inmobiliaria', 'empleo', 'servicios', 'informatica', 'juegos', 'casa', 'mascotas', 'ocio', 'moda'];
