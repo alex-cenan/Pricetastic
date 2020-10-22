@@ -1,20 +1,18 @@
 module.exports = {
+    roleErrors: {
+        unauthorized: 'Acceso denegado.',
+    },
     authErrors: {
-        loginError: {
-            auth: 'false',
-            msg: 'Usuario o contraseña incorrectos.'
-        },
-        mailExists:  {
-            error: 'mailExists',
-            msg: 'El email ya está registrado.'
-        },
-        unauthorized: {
-            error: 'unauthorized',
-            msg: 'Acceso denegado.'
-        },
+        loginError: 'Usuario o contraseña incorrectos.',
         expiredToken: {
             error: 'expiredToken',
             msg: 'El token ha caducado.'
         }
+    },
+    userErrors: {
+        mailExists: 'El email ya está registrado.',
+        notFound: 'Usuario no encontrado.',
+        noRegisteredUsers: 'No hay usuarios registrados.',
+        
     }
 }

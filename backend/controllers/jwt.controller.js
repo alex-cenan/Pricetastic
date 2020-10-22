@@ -15,7 +15,7 @@ jwtCtrl.generateToken = function(user){
 
 jwtCtrl.verifyToken = function(jwtToken){
     const payload = jwt.verify(jwtToken, process.env.SECRET_KEY_JWT_API);
-    if (Date.now() <= payload.exp * 1000) {
+    if (Date.now() >= payload.exp * 1000) {
         // Token expired
         return false;
     }
